@@ -71,9 +71,9 @@ python 1025250224_smartphone_analysis.py
 
 ## 📌 Key Findings
 
-- Higher smartphone screen time is associated with stronger addiction patterns.
+- Higher smartphone screen time is associated with stronger addiction patterns in the analyzed groups.
 - Social media represents a significant component of overall smartphone usage.
-- Sleep duration tends to decrease as usage intensity increases.
+- Mean sleep hours are relatively similar across the addiction groups in this dataset, so the analysis does **not** show a strong sleep-duration difference by addiction level.
 - Weekend screen time is generally higher than weekday screen time, with a mean difference of about **1.74 hours** in this dataset.
 - Heavy users can be identified through unusually high notification counts and app-opening frequency.
 - Usage patterns vary across different addiction levels, providing useful behavioral comparisons.
