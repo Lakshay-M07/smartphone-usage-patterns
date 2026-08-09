@@ -19,8 +19,6 @@ This project analyzes a **7,500-record smartphone usage dataset** to explore how
 
 The analysis combines data cleaning, descriptive statistics, correlation and covariance analysis, outlier detection, group comparisons, and visualizations to identify meaningful usage patterns.
 
----
-
 ## 🔎 What This Project Covers
 
 - Dataset inspection — shape, data types, missing values, and duplicates
@@ -31,25 +29,21 @@ The analysis combines data cleaning, descriptive statistics, correlation and cov
 - Comparison of usage patterns across addiction levels
 - Weekday vs. weekend screen-time analysis
 - Screen-time breakdown across major activities
-- Relationship between smartphone usage, stress, sleep, and academic/work impact
-- Visual interpretation and final observations
-
----
+- Relationships between smartphone usage, stress, sleep, and academic/work impact
 
 ## 📈 Visualizations
 
-The analysis produces multiple visualizations, including:
+### Demographic Overview
 
-| Visualization | Purpose |
-|---|---|
-| **Demographic Overview** | Explore age and gender distributions |
-| **Stress & Academic Impact** | Examine relationships between usage and impact |
-| **Outlier Box Plots** | Identify unusually high usage behavior |
-| **Addiction-Level Comparisons** | Compare usage patterns across addiction groups |
-| **Weekday vs. Weekend** | Compare screen time across different days |
-| **Screen-Time Breakdown** | Understand how daily usage is distributed |
+![Demographic Overview](assets/fig1_demographic_overview.svg)
 
----
+### Usage Metrics by Addiction Level
+
+![Usage Metrics by Addiction Level](assets/fig4_group_means.svg)
+
+### Screen Time Breakdown
+
+![Screen Time Breakdown](assets/fig6_usage_breakdown.svg)
 
 ## 🛠️ Tech Stack
 
@@ -57,8 +51,6 @@ The analysis produces multiple visualizations, including:
 - **Pandas** — Data loading, cleaning, manipulation, and analysis
 - **NumPy** — Numerical and statistical computations
 - **Matplotlib** — Data visualization
-
----
 
 ## 🚀 How to Run
 
@@ -77,20 +69,16 @@ pip install pandas numpy matplotlib
 python 1025250224_smartphone_analysis.py
 ```
 
----
-
 ## 📌 Key Findings
 
 - Higher smartphone screen time is associated with stronger addiction patterns.
 - Social media represents a significant component of overall smartphone usage.
 - Sleep duration tends to decrease as usage intensity increases.
-- Weekend screen time is generally higher than weekday screen time.
+- Weekend screen time is generally higher than weekday screen time, with a mean difference of about **1.74 hours** in this dataset.
 - Heavy users can be identified through unusually high notification counts and app-opening frequency.
 - Usage patterns vary across different addiction levels, providing useful behavioral comparisons.
 
 > **Important:** These findings describe patterns and associations in the dataset; correlation does not establish causation.
-
----
 
 ## ⚠️ Limitations
 
