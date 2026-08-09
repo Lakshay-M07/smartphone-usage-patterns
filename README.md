@@ -1,94 +1,109 @@
-# Smartphone Usage Patterns
+<div align="center">
 
-An exploratory data analysis project on smartphone usage, addiction, stress, and academic impact using a 7,500-row dataset.
+# 📱 Smartphone Usage Patterns
 
-## Overview
+**Exploratory data analysis of smartphone usage, digital habits, addiction, stress, and academic impact.**
 
-This repository contains a Python-based analysis of smartphone usage behavior. The project:
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Statistics-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge)
 
-- cleans the raw dataset
-- explores demographic distributions
-- studies covariance and correlation
-- detects outliers using IQR and Z-score methods
-- compares usage patterns across addiction levels
-- contrasts weekday and weekend screen time
-- visualizes screen-time breakdown by activity
+</div>
 
-## Dataset
+---
 
-The analysis is based on **Smartphone Usage and Addiction Analysis (7,500 Records)**.
+## 📊 Overview
 
-The dataset includes fields such as:
+This project analyzes a **7,500-record smartphone usage dataset** to explore how everyday smartphone behavior relates to addiction levels, stress, sleep, and academic/work impact.
 
-- age
-- gender
-- daily screen time
-- social media hours
-- gaming hours
-- work/study hours
-- sleep hours
-- notifications per day
-- app opens per day
-- weekend screen time
-- addiction level
-- stress level
-- academic/work impact
+The analysis combines data cleaning, descriptive statistics, correlation and covariance analysis, outlier detection, group comparisons, and visualizations to identify meaningful usage patterns.
 
-## What the script does
+---
 
-The Python script:
+## 🔎 What This Project Covers
 
-1. loads the CSV dataset
-2. drops unused ID columns
-3. fills missing addiction labels with `Unknown`
-4. creates helper scores for analysis
-5. prints summary statistics
-6. generates multiple charts and saves them as PNG files
-7. prints final conclusions from the analysis
+- Dataset inspection — shape, data types, missing values, and duplicates
+- Data cleaning and preparation
+- Demographic and usage-pattern exploration
+- Covariance and correlation analysis across numerical features
+- Outlier detection using **IQR** and **Z-score** methods
+- Comparison of usage patterns across addiction levels
+- Weekday vs. weekend screen-time analysis
+- Screen-time breakdown across major activities
+- Relationship between smartphone usage, stress, sleep, and academic/work impact
+- Visual interpretation and final observations
 
-## Key findings highlighted by the analysis
+---
 
-- higher screen time is strongly associated with stronger addiction patterns
-- social media contributes heavily to non-work screen time
-- sleep tends to move inversely with usage intensity
-- weekend screen time is higher than weekday screen time
-- outliers in notifications and app opens represent heavy usage behavior
+## 📈 Visualizations
 
-## Files
+The analysis produces multiple visualizations, including:
 
-- `1025250224_smartphone_analysis.py` — main analysis script
-- `Smartphone_Usage_And_Addiction_Analysis_7500_Rows.csv` — dataset
-- `README.md` — project documentation
+| Visualization | Purpose |
+|---|---|
+| **Demographic Overview** | Explore age and gender distributions |
+| **Stress & Academic Impact** | Examine relationships between usage and impact |
+| **Outlier Box Plots** | Identify unusually high usage behavior |
+| **Addiction-Level Comparisons** | Compare usage patterns across addiction groups |
+| **Weekday vs. Weekend** | Compare screen time across different days |
+| **Screen-Time Breakdown** | Understand how daily usage is distributed |
 
-## How to run
+---
 
-Install the dependencies:
+## 🛠️ Tech Stack
+
+- **Python** — Core programming language
+- **Pandas** — Data loading, cleaning, manipulation, and analysis
+- **NumPy** — Numerical and statistical computations
+- **Matplotlib** — Data visualization
+
+---
+
+## 🚀 How to Run
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/Lakshay-M07/smartphone-usage-patterns.git
+cd smartphone-usage-patterns
+
+# 2. Install dependencies
 pip install pandas numpy matplotlib
-```
 
-Run the script from the repo root:
+# 3. Place the dataset in the same folder
+# (Smartphone_Usage_And_Addiction_Analysis_7500_Rows.csv)
 
-```bash
+# 4. Run the script
 python 1025250224_smartphone_analysis.py
 ```
 
-## Output
+---
 
-The script saves figures in the project directory, including:
+## 📌 Key Findings
 
-- demographic overview
-- stress and academic impact charts
-- outlier box plots
-- addiction-level comparison charts
-- weekend vs weekday screen time chart
-- screen-time breakdown chart
+- Higher smartphone screen time is associated with stronger addiction patterns.
+- Social media represents a significant component of overall smartphone usage.
+- Sleep duration tends to decrease as usage intensity increases.
+- Weekend screen time is generally higher than weekday screen time.
+- Heavy users can be identified through unusually high notification counts and app-opening frequency.
+- Usage patterns vary across different addiction levels, providing useful behavioral comparisons.
 
-## Notes
+> **Important:** These findings describe patterns and associations in the dataset; correlation does not establish causation.
 
-The script has been adjusted so it can load the CSV from the repository instead of a local Downloads path.
+---
 
-## Author
+## ⚠️ Limitations
 
-Lakshay Mohata
+- The analysis is based on a finite sample of **7,500 records**.
+- The dataset does not provide a time-series dimension, so year-by-year trends cannot be studied.
+- Self-reported behavioral data may contain reporting bias.
+- Important contextual variables such as location, company size, and detailed skill sets may not be available.
+- Correlation and covariance indicate relationships between variables, not causal effects.
+
+---
+
+<div align="center">
+
+### 📱 Understanding Digital Habits Through Data
+
+</div>
